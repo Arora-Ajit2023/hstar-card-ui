@@ -43,6 +43,9 @@
   bottom: 2%;
   visibility: hidden;
 }
+/* .movie-details:hover {
+  background-image: linear-gradient(red, yellow);
+} */
 
 .movie-title {
   color: white;
