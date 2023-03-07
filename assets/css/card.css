@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.main-card {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.main-container {
+  position: relative;
+  transition: transform 0.2s ease-out;
+}
+.main-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.main-container:hover .movie-details {
+  visibility: visible;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.movie-details {
+  position: absolute;
+  left: 13px;
+  bottom: 2%;
+  visibility: hidden;
+}
+
+.movie-title {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.movie-info {
+  color: white;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.movie-description {
+  color: white;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.btn {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  width: 80%;
+  margin: 0 0.7rem 0.3rem;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+}
+.btn:hover {
+  background-color: #858282;
+  opacity: 0.8;
+}
+
+.icon {
+  font-size: 1.3rem !important;
+}
+.watch-now {
+  border: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.watch-list {
+  border: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
