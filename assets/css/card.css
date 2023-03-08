@@ -15,7 +15,7 @@
 
 .main-container {
   position: relative;
-  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-in;
 }
 .main-container:hover {
   transform: scale(1.1);
@@ -39,13 +39,18 @@
 }
 .movie-details {
   position: absolute;
-  left: 13px;
-  bottom: 2%;
+  left: 0px;
+  bottom: 0px;
   visibility: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(237, 237, 237, 0.5),
+    #4a556c
+  );
+  padding: 0.5rem;
+  /* transition: opacity 0.25s ease-in,
+    bottom 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93); */
 }
-/* .movie-details:hover {
-  background-image: linear-gradient(red, yellow);
-} */
 
 .movie-title {
   color: white;
